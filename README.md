@@ -1,2 +1,2 @@
-# colorado-remote-therapy
+# Colorado Remote Therapy
 React app 
