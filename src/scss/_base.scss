@@ -1,16 +1,16 @@
 
 body {
   margin: 0;
-  font-family: "Roboto", "Oxygen",
+  font-family: "Avenir", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: rgb(197,221,234);
-  background: radial-gradient(circle, rgba(197,221,234,1) 0%, rgba(197,221,234,.3) 100%);
+  background: radial-gradient(circle, rgba(197,221,234,1) 60%, rgba(197,221,234,.3) 100%);
   color: $dark;
   font-size: $font-base;
-  font-weight: bold;
+  // font-weight: bold;
 }
 
 code {
@@ -53,11 +53,12 @@ code {
     color: $white;
     background-color: $accent-light;
     border: 1px solid $accent-light;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     letter-spacing: .045em;
     font-size: .8em;
     border-radius: 4px;
     transition: all ease-in-out .3s;
+    font-weight: bold;
 
     &.button-secondary {
         background-color: $accent-dark;
