@@ -1,0 +1,81 @@
+
+body {
+  margin: 0;
+  font-family: "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(197,221,234);
+  background: radial-gradient(circle, rgba(197,221,234,1) 0%, rgba(197,221,234,.3) 100%);
+  color: $dark;
+  font-size: $font-base;
+  font-weight: bold;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+    text-align: center;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $dark;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.button-wrapper {
+    margin-top: 30px;
+    display: flex;
+
+    .button {
+        flex: 0 1 50%;
+    }
+}
+
+.button {
+    margin: 30px 15px;
+    display: inline-block;
+    min-width: 200px;
+    line-height: 1em;
+    text-align: center;
+    padding: 15px 15px;
+    white-space: nowrap;
+    color: $white;
+    background-color: $accent-light;
+    border: 1px solid $accent-light;
+    text-transform: uppercase;
+    letter-spacing: .045em;
+    font-size: .8em;
+    border-radius: 4px;
+    transition: all ease-in-out .3s;
+
+    &.button-secondary {
+        background-color: $accent-dark;
+        border: 1px solid $accent-dark;
+    }
+
+    &.button-out {
+        background-color: transparent;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: darken($accent-light, 10%);
+        border: 1px solid darken($accent-light, 10%);
+
+        &.button-secondary {
+            background-color: darken($accent-dark, 10%);
+            border: 1px solid darken($accent-dark, 10%);
+        }
+    }
+}
